@@ -42,7 +42,9 @@ def getEmptySpaces(imagePath, showSpaces = False):
 		plt.show()
 	
 
-	return spaceCheck
+	return list(spaceCheck.astype(int))
 
 
-getEmptySpaces('test.jpeg', showSpaces=True)
+spaceArray = getEmptySpaces('test.jpeg', showSpaces=True)
+
+print(spaceArray)
